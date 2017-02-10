@@ -7,12 +7,12 @@ confinement: devmode
 
 parts:
   ntkd-common:
-    source: git@github.com:lukisi/ntkd-common.git
+    source: https://github.com/lukisi/ntkd-common.git
     plugin: autotools
     build-packages:
       - valac
   tasklet-system:
-    source: git@github.com:lukisi/tasklet-system.git
+    source: https://github.com/lukisi/tasklet-system.git
     plugin: autotools
     build-packages:
       - valac
@@ -20,7 +20,7 @@ parts:
       - libgee-0.8-2
       - libgee-0.8-dev
   pth-tasklet:
-    source: git@github.com:lukisi/pth-tasklet.git
+    source: https://github.com/lukisi/pth-tasklet.git
     after: [tasklet-system]
     plugin: autotools
     build-packages:
@@ -31,7 +31,7 @@ parts:
       - libpth20
       - libpth-dev
   zcd:
-    source: git@github.com:lukisi/zcd.git
+    source: https://github.com/lukisi/zcd.git
     after: [tasklet-system, pth-tasklet]
     plugin: autotools
     build-packages:
@@ -42,7 +42,7 @@ parts:
       - libjson-glib-1.0-0
       - libjson-glib-dev
   ntkdrpc:
-    source: git@github.com:lukisi/ntkdrpc.git
+    source: https://github.com/lukisi/ntkdrpc.git
     after: [tasklet-system, zcd]
     plugin: autotools
     build-packages:
@@ -53,7 +53,7 @@ parts:
       - libjson-glib-1.0-0
       - libjson-glib-dev
   qspnclient:
-    source: git@github.com:lukisi/proof.git
+    source: https://github.com/lukisi/proof.git
     after: [tasklet-system, pth-tasklet, ntkd-common, ntkdrpc]
     plugin: autotools
     build-packages:

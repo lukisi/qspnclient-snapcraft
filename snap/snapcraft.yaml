@@ -54,6 +54,7 @@ parts:
       - libjson-glib-dev
   qspnclient:
     source: https://github.com/lukisi/proof.git
+    source-branch: change_linklocal
     after: [tasklet-system, pth-tasklet, ntkd-common, ntkdrpc]
     plugin: autotools
     build-packages:

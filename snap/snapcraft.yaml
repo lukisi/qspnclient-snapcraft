@@ -70,7 +70,7 @@ parts:
       - bash
 
 apps:
-  qspnclient:
+  qspnclient-changelinklocal:
     command: bin/qspnclient
     plugs: [network-control]
   bash:

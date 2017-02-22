@@ -72,6 +72,8 @@ parts:
 apps:
   qspnclient:
     command: bin/qspnclient
+    plugs: [network-control]
   bash:
     command: bin/bash
+    plugs: [network-control]
 
